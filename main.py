@@ -14,3 +14,8 @@ def fine_busiest_intersectiopns(intersections_list):
 
 
 intersections_list = [1,2,3,1,4,5,]
+busiest_intersection = fine_busiest_intersectiopns(intersections_list)
+if (len(busiest_intersection)) == 1:
+    print("The busiest intersection is intersection no.:", busiest_intersection)
+else:
+    print("The businest intersection are intersection no.:", busiest_intersection)
