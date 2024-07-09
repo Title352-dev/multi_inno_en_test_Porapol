@@ -1,7 +1,5 @@
 def fine_busiest_intersectiopns(intersections_list):
     busiest =[] #create list to use for store list of busiest intersection
-    if (len(intersections_list) == 0): #check if enter empty list
-        return busiest  #return empty list if enter empty list
     busiestValue = 0 #set value to record highest value
     intersectionNo = 0  #name the intersection
     for intersection in intersections_list: #use for loop to compare intersection
@@ -15,7 +13,7 @@ def fine_busiest_intersectiopns(intersections_list):
 
 
 
-intersections_list = [99,5,2,4,99,4] #example for test
+intersections_list = [] #example for test
 busiest_intersection = fine_busiest_intersectiopns(intersections_list)  #use the function
 if (len(busiest_intersection)) == 1:    #summary
     print("The busiest intersection is intersection no.:", busiest_intersection[0])
