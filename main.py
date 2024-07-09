@@ -9,13 +9,13 @@ def fine_busiest_intersectiopns(intersections_list):
             busiestValue =intersection  #set as record
             busiest = [intersectionNo]  #reset businest to have only new record
         elif intersection == busiestValue: #check if found same highest value
-             busiest.insert(intersectionNo) #add new member
+             busiest.append(intersectionNo) #add new member
         intersectionNo+=1     #create new name dor next intersection
     return busiest  #return businest intersection list
 
 
 
-intersections_list = [] #example for test
+intersections_list = [99,5,2,4,99,4] #example for test
 busiest_intersection = fine_busiest_intersectiopns(intersections_list)  #use the function
 if (len(busiest_intersection)) == 1:    #summary
     print("The busiest intersection is intersection no.:", busiest_intersection[0])
